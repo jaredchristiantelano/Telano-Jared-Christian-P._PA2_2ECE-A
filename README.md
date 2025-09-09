@@ -44,7 +44,7 @@ B = C.reshape(10, 10)                            # Reshape the 1D array into a 1
 A = B**2                                         # Squares every element in the array 
 
 def find_divisible_by_3(A):                      # The elements are first checked whether they are divisible by 3. The array 
-  return A * (A % 3 == 0)                        # is multiplied again. If True, elements are reatained that are divisible by 3, while elements 
+  return A * (A % 3 == 0)                        # is multiplied again. If True, elements are retained that are divisible by 3, while elements 
                                                  # that are not divisible by 3 are replaced with 0
     
 D = find_divisible_by_3(A)                       # Calls the function 
