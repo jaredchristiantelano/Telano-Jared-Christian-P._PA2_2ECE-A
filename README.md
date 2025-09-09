@@ -35,25 +35,24 @@ np.save('X_normalized.npy', X)          # Saves the NumPy array
 **Code**
 
 ```
-# Divisible By 3 Problem 
+# Divisible by 3 Problem
 
-import numpy as np                      # Imports NumPy library 
+import numpy as np                               # Imports NumPy library 
 
-C = np.arange(1, 101)                   # Create a 1D array with numbers from 1 to 100
-B = C.reshape(10, 10)                   # Reshape the 1D array into a 10x10 2D array
-A = B**2                                # Squares every element in the array 
+C = np.arange(1, 101)                            # Create a 1D array with numbers from 1 to 100
+B = C.reshape(10, 10)                            # Reshape the 1D array into a 10x10 2D array
+A = B**2                                         # Squares every element in the array 
 
-def find_divisible_by_3(A):             
-  mask = (A % 3 == 0)                   # Create a boolean mask where True specifies elements that are divisible by 3
-  D = A[mask]                           # Retrieves all elements divisible by 3
-  result = np.zeros_like(A)             # Initializes the elements in the array with zeroes 
-  result[mask] = A[mask]                # Retains the numbers divisible by 3 in the array and replace that don't with zeroes
-  return result
-
-D = find_divisible_by_3(A)              # Calls the function 
-print("Elements divisible by 3: ")      # Dsiplays the array with elements that are divisible by 3
+def find_divisible_by_3(A):                      # The elements are first checked whether they are divisible by 3. The array 
+  return A * (A % 3 == 0)                        # is multiplied again. If True, elements are reatained that are divisible by 3, while elements 
+                                                 # that are not divisible by 3 are replaced with 0
+    
+D = find_divisible_by_3(A)                       # Calls the function 
+print("Square of first 100 positive integers: ")
+print(A)
+print("Elements divisible by 3: ")               # Dsiplays the array with elements that are divisible by 3
 print(D)                                
-np.save('div_by_3.npy', D)              # Saves the NumPy array
+np.save('div_by_3.npy', D)                       # Saves the NumPy array
 ```
 
 Output 
