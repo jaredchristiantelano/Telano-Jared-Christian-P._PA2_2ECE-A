@@ -1,8 +1,7 @@
 # Telano-Jared-Christian-P._PA2_2ECE-A
 This assignment use different codes to create Python programs with the use of NumPy library. 
 
-**Normalization Problem
-**
+**Normalization Problem**
 
 **Description:** In this problem, NumPy library was used to perform a normalization technique, specifically performing the z-score normalization. To start, a random 5x5 ndarray with random floating point values was created. Then, the average and standard deviation of the elements in the array are calculated using np.mean() and np.std(), respectively. The calculated values were then used for the z-zcore normalization.
 
@@ -29,8 +28,7 @@ np.save('X_normalized.npy', X)          # Saves the NumPy array
  [-0.93428443 -0.42399008 -0.49554684  0.61017021 -0.30193564]]
 ```
 
-**Divisible By 3 Problem
-**
+**Divisible By 3 Problem**
 
 **Description:** In this problem, a 10x10 ndarray was created with values of the square of the first 100 positive integers. Then, the elements of the array are then filtered, retaining elements that are divisible by 3, and replacing other numbers with zeroes. 
 
