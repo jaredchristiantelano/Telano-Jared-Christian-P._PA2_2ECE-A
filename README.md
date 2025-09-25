@@ -1,5 +1,5 @@
 # Telano-Jared-Christian-P._PA2_2ECE-A
-This assignment use different codes to create Python programs with the use of NumPy library. 
+This assignment used different codes to create Python programs with the use of NumPy library. 
 
 **Normalization Problem**
 
@@ -30,7 +30,8 @@ np.save('X_normalized.npy', X)          # Saves the NumPy array
 
 **Divisible By 3 Problem**
 
-**Description:** In this problem, a 10x10 ndarray was created with values of the square of the first 100 positive integers. Then, the elements of the array are then filtered, retaining elements that are divisible by 3, and replacing other numbers with zeroes. 
+**Description:** In this problem, NumPy library was imported first. Then, a 1D array with positive integers from 1 to 100 was created. The 1D array was then shaped into a 10x10 2D array using the function .reshape(). The values in that 2D array was then squared. After creating the needed array, a function that checks whether the element in that array is divisible by 3. If the element is divisible by 3, the number is retained. If not, the element is returned as 0. The function returns the new array, where elements that are divisible by 3 are returned. 
+
 
 **Code**
 
@@ -44,8 +45,8 @@ B = C.reshape(10, 10)                            # Reshape the 1D array into a 1
 A = B**2                                         # Squares every element in the array 
 
 def find_divisible_by_3(A):                      # The elements are first checked whether they are divisible by 3. The array 
-  return A * (A % 3 == 0)                        # is multiplied again. If True, elements are retained that are divisible by 3, while elements 
-                                                 # that are not divisible by 3 are replaced with 0
+  return A * (A % 3 == 0)                        # is multiplied again. If True, elements are retained that are divisible by 3, while 
+                                                 # elements that are not divisible by 3 are replaced with 0
     
 D = find_divisible_by_3(A)                       # Calls the function 
 print("Square of first 100 positive integers: ")
